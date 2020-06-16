@@ -1,4 +1,19 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
+@font-face {
+  font-family: 'Calibri';
+  src: url('/static/fonts/Calibri.eot');
+  src: url('/static/fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+    url('/static/fonts/Calibri.woff') format('woff'),
+    url('/static/fonts/Calibri.ttf') format('truetype'),
+    url('/static/fonts/Calibri.svg#svgFontName') format('svg');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibri Bold';
+  src: url('/static/fonts/Calibri-Bold.eot');
+  src: url('/static/fonts/Calibri-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/static/fonts/Calibri-Bold.woff') format('woff'),
+    url('/static/fonts/Calibri-Bold.ttf') format('truetype'),
+    url('/static/fonts/Calibri-Bold.svg#svgFontName') format('svg');
+  font-display: swap;
 }

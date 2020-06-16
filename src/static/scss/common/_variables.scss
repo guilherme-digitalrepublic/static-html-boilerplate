@@ -1,0 +1,55 @@
+// COLORS
+// ----------------------------------------------
+$transparent: transparent;
+$black: #000;
+$white: #fff;
+$orange: #f4901d;
+$grey: #777;
+$red: #c53e3e;
+$light-grey: #e8e8e8;
+$menu-background: rgba($black, 0.5);
+$modal-background: rgba($black, 0.9);
+
+// TRANSITIONS
+// ----------------------------------------------
+$main-transition: 150ms linear;
+$menu-transition: 300ms ease-out;
+
+// BOX-SHADOWS
+// ----------------------------------------------
+$box-shadow-customers: 0 3px 6px rgba($black, 0.16);
+
+// FONTS
+// ----------------------------------------------
+$font: 'Calibri', Arial, sans-serif;
+$font-bold: 'Calibri Bold', Arial, sans-serif;
+$font-title: 'Montserrat', Arial, sans-serif;
+
+// FONT WEIGHT
+// ----------------------------------------------
+$normal: 400;
+$bold: 700;
+
+// BREAKPOINTS
+// -----------------------------------------------------------
+$bps: (
+  'large-mobile': 480px,
+  'tablet': 768px,
+  'laptop': 1024px,
+  'desktop': 1280px,
+  'wide': 1440px,
+  'infinity': 1680px
+);
+
+// Z-INDEX
+// -----------------------------------------------------------
+$z-index-normal: 1;
+$z-index-modal-content: 2;
+$z-index-modal-close: 3;
+$z-index-nav: 4;
+
+// FUNCTIONS
+// ----------------------------------------------
+@function rem($size) {
+  @return $size / 10px * 1rem;
+}

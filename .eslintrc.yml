@@ -16,7 +16,6 @@ env:
 #  All rules related to formatting or style are disabled,
 #  because prettier.io supersedes them.
 rules:
-
   # Possible Errors
   #  These rules relate to possible syntax or logic errors
   for-direction: error
@@ -29,8 +28,7 @@ rules:
   no-template-curly-in-string: error
   valid-jsdoc:
     - error
-    -
-      prefer:
+    - prefer:
         return: returns
       preferType:
         boolean: Boolean
@@ -44,24 +42,21 @@ rules:
   no-console:
     - error
     - allow:
-      - "warn"
-      - "error"
+        - 'warn'
+        - 'error'
 
   # Best Practices
   #  These rules relate to better ways of doing things to help you avoid problems
   accessor-pairs: error
   array-callback-return: error
   block-scoped-var: error
-  class-methods-use-this: error
   complexity:
     - error
-    - max: 5
-  consistent-return: error
+    - max: 9
   default-case: error
   dot-notation: error
   eqeqeq: error
   guard-for-in: error
-  no-alert: error
   no-caller: error
   no-div-regex: error
   no-else-return: error
@@ -84,7 +79,6 @@ rules:
     - error
     - ignore: [-1, 0, 1]
   no-multi-str: error
-  no-new: error
   no-new-func: error
   no-new-wrappers: error
   no-octal-escape: error

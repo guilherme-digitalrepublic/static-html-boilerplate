@@ -8,6 +8,7 @@ import { reload } from 'browser-sync'
 import sass from 'gulp-sass'
 import sourcemaps from 'gulp-sourcemaps'
 import stylelint from 'gulp-stylelint'
+import header from 'gulp-header'
 
 /**
  * Task: CSS Compile
@@ -18,6 +19,7 @@ export function css() {
 
   return src(config.src.static)
     .pipe(sourcemaps.init())
+    .pipe(header(`$ns: 'dr';\n`))
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(postcssProcessors))
     .pipe(cleanCSS())

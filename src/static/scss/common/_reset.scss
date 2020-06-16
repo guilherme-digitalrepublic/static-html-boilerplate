@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: $font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+picture {
+  width: 100%;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+svg {
+  fill: currentColor;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border: 0;
+  border-bottom: 3px solid #fff;
+  -webkit-text-fill-color: $orange;
+  transition: background-color 50000s;
+  caret-color: $orange;
+}

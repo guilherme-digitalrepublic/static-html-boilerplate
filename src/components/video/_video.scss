@@ -1,0 +1,42 @@
+.#{$ns}-video {
+  padding-bottom: 56.25%;
+  position: relative;
+
+  &__youtube,
+  &__iframe {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__thumb {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__play {
+    height: rem(22px);
+    width: rem(25px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: $z-index-modal-content;
+
+    @include breakpoint('tablet') {
+      height: rem(55px);
+      width: rem(62px);
+    }
+
+    @include breakpoint('laptop') {
+      height: rem(91px);
+      width: rem(103px);
+    }
+  }
+}

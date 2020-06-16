@@ -1,0 +1,183 @@
+// MIXINS
+// ----------------------------------------------
+@mixin breakpoint($bp-value) {
+  @media (min-width: map-get($bps, $bp-value)) {
+    @content;
+  }
+}
+
+@mixin flex($align, $justify: $align) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin background(
+  $img,
+  $position: 'center',
+  $size: 'cover',
+  $repeat: 'no-repeat'
+) {
+  background-image: url('/static/img/#{$img}');
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
+@mixin caps-big {
+  font-family: $font-title;
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: rem(28px);
+  line-height: rem(34px);
+
+  @include breakpoint('tablet') {
+    font-size: rem(34px);
+    line-height: rem(42px);
+  }
+
+  @include breakpoint('laptop') {
+    font-size: rem(52px);
+    line-height: rem(63px);
+  }
+}
+
+@mixin caps-medium {
+  font-family: $font-title;
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: rem(26px);
+  line-height: rem(32px);
+
+  @include breakpoint('tablet') {
+    font-size: rem(28px);
+    line-height: rem(34px);
+  }
+
+  @include breakpoint('laptop') {
+    font-size: rem(48px);
+    line-height: rem(58px);
+  }
+}
+
+@mixin caps-small {
+  font-family: $font-title;
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: rem(22px);
+  line-height: rem(27px);
+
+  @include breakpoint('tablet') {
+    font-size: rem(24px);
+    line-height: rem(29px);
+  }
+
+  @include breakpoint('laptop') {
+    font-size: rem(38px);
+    line-height: rem(47px);
+  }
+}
+
+@mixin text-bold {
+  font-family: $font-title;
+  font-weight: $bold;
+  font-size: rem(18px);
+  line-height: rem(22px);
+
+  @include breakpoint('tablet') {
+    font-size: rem(22px);
+    line-height: rem(27px);
+  }
+
+  @include breakpoint('laptop') {
+    font-size: rem(36px);
+    line-height: rem(44px);
+  }
+}
+
+@mixin text-bold-medium {
+  font-family: $font-title;
+  font-weight: $bold;
+  font-size: rem(22px);
+  line-height: rem(27px);
+
+  @include breakpoint('laptop') {
+    font-size: rem(24px);
+    line-height: rem(30px);
+  }
+
+  @include breakpoint('desktop') {
+    font-size: rem(34px);
+    line-height: rem(42px);
+  }
+}
+
+@mixin text-bold-tiny {
+  font-family: $font-title;
+  font-weight: $bold;
+  font-size: rem(14px);
+  line-height: rem(18px);
+
+  @include breakpoint('laptop') {
+    font-size: rem(22px);
+    line-height: rem(27px);
+  }
+}
+
+@mixin text {
+  font-family: $font;
+  font-weight: $normal;
+  font-size: rem(18px);
+  line-height: rem(22px);
+
+  @include breakpoint('laptop') {
+    font-size: rem(36px);
+    line-height: rem(27px);
+  }
+}
+
+@mixin text-link {
+  font-family: $font;
+  font-weight: $normal;
+  font-size: rem(18px);
+  line-height: rem(27px);
+
+  @include breakpoint('tablet') {
+    font-size: rem(14px);
+    line-height: rem(21px);
+  }
+
+  @include breakpoint('laptop') {
+    font-size: rem(16px);
+    line-height: rem(22px);
+  }
+
+  @include breakpoint('desktop') {
+    font-size: rem(20px);
+    line-height: rem(28px);
+  }
+}
+
+@mixin text-small {
+  font-family: $font;
+  font-weight: $normal;
+  font-size: rem(16px);
+  line-height: rem(19px);
+
+  @include breakpoint('laptop') {
+    font-size: rem(22px);
+    line-height: rem(27px);
+  }
+}
+
+@mixin text-tiny {
+  font-family: $font;
+  font-weight: $normal;
+  font-size: rem(14px);
+  line-height: rem(18px);
+
+  @include breakpoint('laptop') {
+    font-size: rem(18px);
+    line-height: rem(22px);
+  }
+}

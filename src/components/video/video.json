@@ -1,0 +1,13 @@
+{
+  "videoId": "NpEaa2P7qZI",
+  "thumb": "/static/img/thumb",
+  "play": {
+    "id": "play-button",
+    "class": "dr-video__play"
+  },
+  "pictureImg": {
+    "src": "/static/img/thumb",
+    "alt": "Video",
+    "imgClass": "dr-video__thumb"
+  }
+}
